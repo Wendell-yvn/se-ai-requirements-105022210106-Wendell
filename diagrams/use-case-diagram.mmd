@@ -1,0 +1,24 @@
+flowchart LR
+    Lecturer[Lecturer]
+    Student[Student]
+    Administrator[Administrator]
+
+    UC1((Create Assignment))
+    UC2((View Submissions))
+    UC3((Grade Submission))
+    UC4((View Assignment))
+    UC5((Submit Assignment))
+    UC6((View Grade and Feedback))
+    UC7((Manage Users))
+    UC8((Manage Courses))
+    UC9((View Reports))
+
+    Lecturer --> UC1
+    Lecturer --> UC2
+    Lecturer --> UC3
+    Student --> UC4
+    Student --> UC5
+    Student --> UC6
+    Administrator --> UC7
+    Administrator --> UC8
+    Administrator --> UC9
